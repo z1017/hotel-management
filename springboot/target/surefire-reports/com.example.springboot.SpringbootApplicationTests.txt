@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.example.springboot.SpringbootApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.976 s <<< FAILURE! - in com.example.springboot.SpringbootApplicationTests
+contextLoads  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'userMapper'; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'userService': Requested bean is currently in creation: Is there an unresolvable circular reference?
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'userMapper'; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'userService': Requested bean is currently in creation: Is there an unresolvable circular reference?
+Caused by: org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'userService': Requested bean is currently in creation: Is there an unresolvable circular reference?
+

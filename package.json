@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "element-ui": "^2.15.13",
+    "js-cookie": "^3.0.1"
+  }
+}
